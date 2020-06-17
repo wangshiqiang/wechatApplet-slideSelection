@@ -1,0 +1,11 @@
+<view class="drop-main">
+  <view class="slide-box">
+    <view class="line-list" data-tag="dl" style="width: {{dateList.length * (1 + iMargin)}}px;left: {{listLeft || 0}}px;padding-left:{{winWidth/2}}px;padding-right:{{winWidth/2}}px;" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+      <block wx:for="{{dateList}}" wx:key="index">
+        <view wx:if="{{item}}" class="dt{{activeIndex == index/5 ? ' active' : ''}}"><text class="span">{{item}}</text></view>
+        <view wx:else class="dd"></view>
+      </block>
+    </view>
+  </view>
+  <view class="rule-line"></view>
+</view>
