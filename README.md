@@ -13,7 +13,7 @@ slideSelection 目录为子组件，将该目录放到自己项目的目录中�
 
 
 -- 父组件的 .wxml 文件中引用：
-<!-- <slide-select class="slide-seletion"></slide-select> -->
+&gt;slide-select class="slide-seletion"&lt;&gt;/slide-select&lt;
 
 
 -- 父组件的 .js 文件的 onReady 方法中调用：
